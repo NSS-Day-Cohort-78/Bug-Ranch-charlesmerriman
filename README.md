@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The value is a random assortment of five different rovers from the drovers array in the database.js module.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > The value of the drover variable represents the objects from within an array, and the drovers variable represents the array that the drover variable is getting the objects from.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Your public Loom URL here](https://www.loom.com/share/870e09e176344b138ed32f417ccf7783)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This is a for loop that will continuously push the string "forest" into the journey array until forestNumber equals the value of the variable forests in the areas array.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database variable found within the database.js module is an array of the two arrays cattleTypes and drovers. Within these arrays list various datasets necessary to plug into the main module with the assistance of the functions from the journey.js, cattle.js and drovers.js modules.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > Herdsize is the argument within the parameter of the roundup function. It defines the number that is meant to represent the size of a herd and is required to execute the rest of the function. This function is invoked the main.js module, and the value is defined as 50 within that module by the variable cattleToDrive.
 
 ## When You Are Done
 

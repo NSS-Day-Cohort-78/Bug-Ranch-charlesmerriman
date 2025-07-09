@@ -24,10 +24,12 @@ console.log(`
 `)
 
 console.log(`You will be accompanying ${drovers.length} drovers as they drive ${cattleToDrive} cattle to Old Red's Ranch for grazing`)
-console.log(`\nThe herd is made of up the following cattle (only their breed is shown):`)
-console.log(`${cattle}\n`)
+console.log(`\nThe herd is made of up the following cattle:`)
+for (let i = 0; i < cattle.length; i += 5) {
+    console.log(`${cattle.slice(i, i + 5).join(`, `)}`)
+}
 
-console.log("Here is the team of drovers you will be joining")
+console.log("\nHere is the team of drovers you will be joining")
 for (const drover of drovers) {
     console.log(`\t* ${drover.first_name} ${drover.last_name}`)
 }
